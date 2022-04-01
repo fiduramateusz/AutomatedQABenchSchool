@@ -1,1 +1,3 @@
 Hej to mój draft repo 
+
+Sprawdzam czy działa mi Git
