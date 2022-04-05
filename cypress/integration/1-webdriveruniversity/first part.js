@@ -51,14 +51,12 @@ describe('Automation school test', () => {
 			);
 		});
 	});
-
 	context('Dropdown Menu(s), Checkboxe(s) & Radio Button(s)', () => {
 		beforeEach(() => {
 			cy.visit(
 				'https://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html'
 			);
 		});
-
 		it('Should check all data from the dropdowns', () => {
 			cy.get('#dropdowm-menu-1').select('c#').should('have.value', 'c#');
 			cy.get('#dropdowm-menu-1')
@@ -100,7 +98,9 @@ describe('Automation school test', () => {
 
 		it('Should check date in datepicker', () => {
 			cy.get('input[type=text]').click();
-			// cy.get('').click();
+			cy.get('body > div.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-top > div.datepicker-days').contains('6').click()
+			cy.get('input[type=text]').should('have.value', '04-06-2022')
+
 		});
 	});
 	context('Autocomplete TextField', () => {
@@ -109,7 +109,6 @@ describe('Automation school test', () => {
 				'https://webdriveruniversity.com/Autocomplete-TextField/autocomplete-textfield.html'
 			);
 		});
-
 		it('Should check autocomplete', () => {
 			cy.get('#myInput').type('chi');
 			cy.get('#myInputautocomplete-list > div:nth-child(2)').click();
@@ -120,11 +119,5 @@ describe('Automation school test', () => {
 		beforeEach(() => {
 			cy.visit('https://webdriveruniversity.com/Ajax-Loader/index.html');
 		});
-		
-
-
 	});
-	
 });
-
-//body > div.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-top > div.datepicker-days > table > tbody > tr:nth-child(2) > td.today.active.day
