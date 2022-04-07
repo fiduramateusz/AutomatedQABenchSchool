@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import { navigateTo } from '../../support/page-objects/navBar';
+import { navigateTo } from '../../support/page-objects/02-automation/navBar';
 
 describe('Automation school test', () => {
 	context.only('Automation Test Store', () => {
