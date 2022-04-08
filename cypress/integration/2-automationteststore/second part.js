@@ -3,7 +3,7 @@
 import { navigateTo } from '../../support/page-objects/02-automation/navBar';
 
 describe('Automation school test', () => {
-	context.only('Automation Test Store', () => {
+	
 		beforeEach(() => {
 			cy.openHomePage();
 		});
@@ -11,5 +11,4 @@ describe('Automation school test', () => {
 			navigateTo.apparelAndAccessoriesPage();
 		
 		});
-	});
 });

@@ -61,10 +61,10 @@ describe('Contact Us', () => {
 		cy.get('body').should('contain', errorInvalidEmail);
 	});
 	it('Should return a succes message', () => {
-		cy.get(firstNameLocator).type(firstName);
-		cy.get(lastNameLocator).type(lastName);
+		cy.get(firstNameLocator).type(firstNameValue);
+		cy.get(lastNameLocator).type(lastNameValue);
 		cy.get(emailLocator).type(validEmail);
-		cy.get(commentLocator).type(comment);
+		cy.get(commentLocator).type(commentValue);
 		cy.get(buttonSubmit).click();
 		cy.get(replayMessage).should('contain', replayContent);
 	});
