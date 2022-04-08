@@ -45,7 +45,7 @@ describe('Contact Us', () => {
 		cy.get(emailLocator).should('have.value', '');
 		cy.get(commentLocator).should('have.value', '');
 	});
-	it.only('Should return an error that all fields are required', () => {
+	it('Should return an error that all fields are required', () => {
 		cy.get(firstNameLocator)
 			.type(firstNameValue)
 			.should('have.value', firstNameValue);
