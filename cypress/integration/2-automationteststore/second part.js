@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
-import { navigateTo } from '../../support/page-objects/02-automation/navBar';
+import SubNavbar from "../../support/page-objects/02-automation/subNavbar";
+
 
 describe('Automation school test', () => {
 	
@@ -8,7 +9,8 @@ describe('Automation school test', () => {
 			cy.openHomePage();
 		});
 		it('Should order the items', () => {
-			navigateTo.apparelAndAccessoriesPage();
-		
+			SubNavbar.navigateToSelectTshirt()
+			SubNavbar.navigateToSelectShoes()
+
 		});
 });

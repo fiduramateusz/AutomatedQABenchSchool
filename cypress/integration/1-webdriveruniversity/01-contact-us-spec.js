@@ -16,8 +16,8 @@ const firstNameLocator = 'input[name=first_name]';
 const lastNameValue = 'Abacki';
 const lastNameLocator = 'input[name=last_name]';
 const buttonReset = 'input[type=reset]';
-const errorFieldsRequired = 'Error: all fields are required'
-const errorInvalidEmail = 'Error: Invalid email address'
+const errorFieldsRequired = 'Error: all fields are required';
+const errorInvalidEmail = 'Error: Invalid email address';
 
 describe('Contact Us', () => {
 	beforeEach(() => {
