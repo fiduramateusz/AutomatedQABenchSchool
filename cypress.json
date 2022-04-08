@@ -3,5 +3,13 @@
 	"viewportHeight": 1080,
 	"viewportWidth": 1920,
 	"defaultCommandTimeout": 10000,
-	"projectId": "vqui5x"
+	"projectId": "vqui5x",
+	"env": {
+		"url": "https://webdriveruniversity.com",
+		"url1": "https://webdriveruniversity.com/Contact-Us/contactus.html",
+		"url2": "https://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html",
+		"url3": "https://webdriveruniversity.com/Datepicker/index.html",
+		"url4": "https://webdriveruniversity.com/Autocomplete-TextField/autocomplete-textfield.html",
+		"url5": "https://webdriveruniversity.com/Ajax-Loader/index.html"
+	}
 }
