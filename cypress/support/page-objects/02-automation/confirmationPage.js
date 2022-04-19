@@ -3,7 +3,5 @@ export class ConfimationPage{
     static checkoutOrder() {
 		cy.get(checkoutButton).click();
 	}
-    
-
 }
 
