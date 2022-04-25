@@ -12,5 +12,7 @@ describe('Ajax-Loader', () => {
 		cy.get(buttonClikMe, { timeout: 6000 })
 			.should('be.visible')
 			.and('contain', buttonValue);
+		cy.get(buttonClikMe).click()
+		cy.get('.modal-title').should('have.text','Well Done For Waiting....!!!')
 	});
 });
